@@ -34,7 +34,7 @@
 
         h1 {
             font-weight: $font-weight-xl;
-            font-size: 120px;
+            font-size: clamp(52px, 7vw, 120px);
             color: $color-blue;
         }
 
@@ -100,6 +100,23 @@
             border-radius: 40px;
             border: 1px solid #000000;
         }
+    }
+}
+
+.search {
+    margin: 50px;
+    position: relative;
+
+    i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 12px;
+    }
+
+    input {
+        border-radius: 50px;
+        padding: 10px 40px;
     }
 }
 
@@ -169,6 +186,105 @@
             color: #4b4b4b;
             text-align: center;
         }
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.content-blog {
+    max-width: 1296px;
+    margin: 0 auto;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        li {
+            width: calc(33.3333% - 16px);
+
+            time {
+                color: #000000;
+            }
+
+            p {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                color: #4b4b4b;
+            }
+
+            .describe {
+                margin: 16px 0;
+
+                .tag {
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        font-size: 24px;
+                        color: blue;
+                        margin-top: 4px;
+                    }
+
+                    .top {
+                        background: #0027d5;
+                        color: white;
+                        margin-left: 8px;
+                        padding: 6px 12px;
+                        border-radius: 40px;
+                        font-size: 16px;
+                    }
+                }
+
+                a {
+                    font-size: 24px;
+                    color: blue;
+                    margin-top: 4px;
+                }
+
+                h2 {
+                    font-size: 28px;
+                    margin-bottom: 8px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.more {
+    display: inline-block;
+    border: 1px #000000 solid;
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 40px;
+    color: #4b4b4b;
+
+    &:hover {
+        background-color: gray;
+        color: white;
     }
 }
 
