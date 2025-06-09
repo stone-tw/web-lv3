@@ -170,6 +170,8 @@
             margin-top: 24px;
             margin-bottom: 24px;
         }
+       
+        
     }
 
     .changePage {
@@ -187,28 +189,6 @@
             text-align: center;
         }
     }
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-body {
-    font-size: 16px;
-    font-family: "Noto Sans TC", sans-serif;
-    font-weight: 500;
-    line-height: 1.5;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    vertical-align: middle;
-    max-width: 100%;
 }
 
 .content-blog {
@@ -314,11 +294,10 @@ img {
 
 
 
-@media (max-width:375px) {
+@media (max-width:777px) {
     .banner {
         display: flex;
         flex-direction: column;
-
     }
 
     .top {
@@ -354,7 +333,7 @@ img {
             }
 
             .box {
-                max-width: 100%;
+                width: 100%;
                 margin: 0 auto;
             }
 
