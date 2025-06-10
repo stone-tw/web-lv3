@@ -240,11 +240,17 @@ img {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.top .title a {
-  color: #4B4B4B;
+.top .title .more {
+  display: block;
+  border: 1px #000000 solid;
   padding: 8px 16px;
+  text-align: center;
   border-radius: 40px;
-  border: 1px solid #000000;
+  color: #4b4b4b;
+}
+.top .title .more:hover {
+  background-color: gray;
+  color: white;
 }
 
 .search {
@@ -301,7 +307,6 @@ img {
   border-radius: 24px;
   padding: 24px;
   background-color: #ededed;
-  font-family: Noto Sans TC;
   font-weight: 700;
   margin-top: 24px;
   margin-bottom: 24px;
@@ -387,13 +392,32 @@ img {
   color: white;
 }
 
+.page {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  align-items: center;
+}
+.page a {
+  width: 40px;
+  height: 40px;
+  color: #4B4B4B;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
   margin: 80px;
   gap: 24px;
+  align-items: center;
 }
 .footer .left {
+  font-size: 32px;
+}
+.footer .left a {
+  color: #000000;
   font-size: 32px;
 }
 .footer .right {
@@ -408,7 +432,7 @@ img {
   margin: 24px auto;
 }
 
-@media (max-width: 718px) {
+@media (max-width: 850px) {
   .banner {
     display: flex;
     flex-direction: column;
@@ -435,6 +459,7 @@ img {
     width: 100%;
     padding-left: 12px;
     padding-right: 12px;
+    margin-top: 48px;
   }
   .content {
     max-width: 100%;
@@ -447,7 +472,7 @@ img {
   }
   .content .article .box {
     width: 100%;
-    margin: 0 auto;
+    margin: 24px auto;
   }
   .content .article img {
     width: 100%;
@@ -458,6 +483,13 @@ img {
   }
   .content .changePage {
     margin: 48px 12px 64px 12px;
+  }
+  .content-blog ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content-blog ul li {
+    width: 100%;
   }
   .footer {
     display: none;

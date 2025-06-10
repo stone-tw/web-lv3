@@ -25,7 +25,7 @@
         width: 50%;
         background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
         background-size: contain;
-        background-repeat: no-repeat;        
+        background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -92,11 +92,18 @@
             overflow: hidden;
         }
 
-        a {
-            color: #4B4B4B;
+        .more {
+            display: block;
+            border: 1px #000000 solid;
             padding: 8px 16px;
+            text-align: center;
             border-radius: 40px;
-            border: 1px solid #000000;
+            color: #4b4b4b;
+
+            &:hover {
+                background-color: gray;
+                color: white;
+            }
         }
     }
 }
@@ -163,13 +170,12 @@
             border-radius: 24px;
             padding: 24px;
             background-color: #ededed;
-            font-family: Noto Sans TC;
             font-weight: 700;
             margin-top: 24px;
             margin-bottom: 24px;
         }
-       
-        
+
+
     }
 
     .changePage {
@@ -266,14 +272,35 @@
     }
 }
 
+.page {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    align-items: center;
+
+    a {
+        width: 40px;
+        height: 40px;
+        color: #4B4B4B;
+    }
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
     margin: 80px;
     gap: 24px;
+    align-items: center;
 
     .left {
         font-size: 32px;
+
+        a {
+            color: #000000;
+            font-size: 32px;
+        }
     }
 
     .right {
@@ -292,14 +319,16 @@
 
 
 
-@media (max-width:718px) {
+@media (max-width:850px) {
     .banner {
         display: flex;
         flex-direction: column;
-        .left{
+
+        .left {
             width: 100%;
         }
-        .right{
+
+        .right {
             width: 100%;
         }
     }
@@ -322,7 +351,9 @@
             width: 100%;
             padding-left: 12px;
             padding-right: 12px;
+            margin-top: 48px;
         }
+
     }
 
     .content {
@@ -338,7 +369,7 @@
 
             .box {
                 width: 100%;
-                margin: 0 auto;
+                margin: 24px auto;
             }
 
             img {
@@ -355,6 +386,15 @@
             margin: 48px 12px 64px 12px;
         }
     }
+    .content-blog{
+        ul{
+            flex-direction: column;
+            justify-content: center;
+           li{
+            width: 100%;
+           }
+        }
+    }
 
     .footer {
         display: none;
@@ -365,4 +405,3 @@
         padding-bottom: 24px;
     }
 }
-
