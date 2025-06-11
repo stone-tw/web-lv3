@@ -44,6 +44,11 @@
         }
     }
 }
+.intro{
+    padding: 80px 40px;
+    background-color: #ffffff;    
+   
+}
 
 .top {
     display: flex;
@@ -111,7 +116,6 @@
 .search {
     margin: 50px;
     position: relative;
-
     i {
         position: absolute;
         top: 50%;
@@ -323,6 +327,7 @@
     .banner {
         display: flex;
         flex-direction: column;
+        
 
         .left {
             width: 100%;
@@ -330,6 +335,8 @@
 
         .right {
             width: 100%;
+            background-size: cover;
+            padding: 24px;
         }
     }
 
@@ -355,6 +362,8 @@
         }
 
     }
+
+   
 
     .content {
         max-width: 100%;
@@ -386,13 +395,19 @@
             margin: 48px 12px 64px 12px;
         }
     }
-    .content-blog{
-        ul{
+
+    .content-blog {
+        ul {
             flex-direction: column;
             justify-content: center;
-           li{
-            width: 100%;
-           }
+
+            li {
+                width: 100%;
+                padding: 12px;
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
 

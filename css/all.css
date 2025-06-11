@@ -199,6 +199,11 @@ img {
   color: #0027D5;
 }
 
+.intro {
+  padding: 80px 40px;
+  background-color: #ffffff;
+}
+
 .top {
   display: flex;
   gap: 24px;
@@ -442,6 +447,8 @@ img {
   }
   .banner .right {
     width: 100%;
+    background-size: cover;
+    padding: 24px;
   }
   .top {
     margin: 0 auto;
@@ -489,6 +496,10 @@ img {
     justify-content: center;
   }
   .content-blog ul li {
+    width: 100%;
+    padding: 12px;
+  }
+  .content-blog ul li img {
     width: 100%;
   }
   .footer {
