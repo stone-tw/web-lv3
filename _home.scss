@@ -16,6 +16,7 @@
 
 .banner {
     display: flex;
+    flex-wrap: wrap;
 
     .left {
         width: 50%;
@@ -43,11 +44,61 @@
             color: $color-blue;
         }
     }
+
+    .intro {
+        padding: 80px 40px;
+        background-color: #ffffff;
+        margin-left: 43%;
+        margin-top: -8%;
+        width: 52%;
+    }
+
 }
-.intro{
-    padding: 80px 40px;
-    background-color: #ffffff;    
-   
+
+h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 80px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+}
+
+.service {
+    padding-right: 110px;
+    padding-left: 110px;
+
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 64px;
+
+        img {
+            width: 60%;
+        }
+
+        .describe {
+            width: 50%;
+            height: 75%;
+            background-color: #FFFFFF;
+
+
+            h3 {
+                font-size: 28px;
+                font-weight: 700;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    margin-top: -20px;
+                    border-radius: 5px;
+                    width: 30px;
+                    height: 5px;
+                    background-color: #0027D5;
+                    ;
+                }
+            }
+        }
+    }
 }
 
 .top {
@@ -116,6 +167,7 @@
 .search {
     margin: 50px;
     position: relative;
+
     i {
         position: absolute;
         top: 50%;
@@ -327,7 +379,7 @@
     .banner {
         display: flex;
         flex-direction: column;
-        
+
 
         .left {
             width: 100%;
@@ -337,6 +389,12 @@
             width: 100%;
             background-size: cover;
             padding: 24px;
+        }
+
+        .intro {
+            margin: 0 auto;
+            width: 100%;
+            padding: 40px 24px;
         }
     }
 
@@ -363,7 +421,38 @@
 
     }
 
-   
+
+
+
+
+
+    h2 {
+        font-size: 48px;
+        margin-top: 64px;
+        text-align: center;
+
+    }
+
+    .service {
+        li {
+            flex-direction: column;
+            padding-left: 12px;
+            padding-right: 12px;
+
+            img {
+                width: 100%;
+            }
+
+            .describe {
+                width: 100%;
+            }
+
+        }
+
+        .reverse {
+            flex-direction: column-reverse;
+        }
+    }
 
     .content {
         max-width: 100%;
@@ -404,7 +493,8 @@
             li {
                 width: 100%;
                 padding: 12px;
-                img{
+
+                img {
                     width: 100%;
                 }
             }

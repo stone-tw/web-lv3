@@ -174,6 +174,7 @@ img {
 
 .banner {
   display: flex;
+  flex-wrap: wrap;
 }
 .banner .left {
   width: 50%;
@@ -198,10 +199,51 @@ img {
   font-size: 28px;
   color: #0027D5;
 }
-
-.intro {
+.banner .intro {
   padding: 80px 40px;
   background-color: #ffffff;
+  margin-left: 43%;
+  margin-top: -8%;
+  width: 52%;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-top: 80px;
+  margin-bottom: 32px;
+  margin-left: 32px;
+}
+
+.service {
+  padding-right: 110px;
+  padding-left: 110px;
+}
+.service li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.service li img {
+  width: 60%;
+}
+.service li .describe {
+  width: 50%;
+  height: 75%;
+  background-color: #FFFFFF;
+}
+.service li .describe h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.service li .describe h3::before {
+  content: "";
+  position: absolute;
+  margin-top: -20px;
+  border-radius: 5px;
+  width: 30px;
+  height: 5px;
+  background-color: #0027D5;
 }
 
 .top {
@@ -450,6 +492,11 @@ img {
     background-size: cover;
     padding: 24px;
   }
+  .banner .intro {
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px 24px;
+  }
   .top {
     margin: 0 auto;
     max-width: 100%;
@@ -467,6 +514,25 @@ img {
     padding-left: 12px;
     padding-right: 12px;
     margin-top: 48px;
+  }
+  h2 {
+    font-size: 48px;
+    margin-top: 64px;
+    text-align: center;
+  }
+  .service li {
+    flex-direction: column;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .service li img {
+    width: 100%;
+  }
+  .service li .describe {
+    width: 100%;
+  }
+  .service .reverse {
+    flex-direction: column-reverse;
   }
   .content {
     max-width: 100%;
