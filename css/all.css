@@ -199,6 +199,43 @@ img {
   font-size: 28px;
   color: #0027D5;
 }
+.banner .right-bottom {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.banner .right-bottom .book {
+  background-color: #ffffff;
+  width: 80%;
+  padding: 80px;
+}
+.banner .right-bottom .book h2 {
+  color: black;
+}
+.banner .right-bottom .book p {
+  margin-bottom: 24px;
+}
+.banner .right-bottom .book span {
+  color: blue;
+}
+.banner .right-bottom .book input {
+  width: 100%;
+  background-color: #F1F1F1;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+}
+.banner .right-bottom .book .active {
+  color: #0027D5;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 40px;
+  border: 1px solid #0027D5;
+  margin-top: 24px;
+}
 .banner .intro {
   padding: 80px 40px;
   background-color: #ffffff;
@@ -215,6 +252,12 @@ h2 {
   margin-left: 32px;
 }
 
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: right;
+}
+
 .service {
   padding-right: 110px;
   padding-left: 110px;
@@ -229,12 +272,12 @@ h2 {
 }
 .service li .describe {
   width: 50%;
-  height: 75%;
   background-color: #FFFFFF;
+  padding: 24px;
+  padding-top: 64px;
 }
 .service li .describe h3 {
-  font-size: 28px;
-  font-weight: 700;
+  text-align: left;
 }
 .service li .describe h3::before {
   content: "";
